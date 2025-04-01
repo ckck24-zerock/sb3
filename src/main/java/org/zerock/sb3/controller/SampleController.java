@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Controller
@@ -48,4 +50,9 @@ public class SampleController {
     model.addAttribute("list", arr);
     model.addAttribute("voList", voList);
   }
+
+  @GetMapping("ex2")
+  public void ex2() {
+  }
+  
 }
